@@ -18,7 +18,6 @@ body
 
 
 //Header
-
 .header	
 	&-wrapper
 		height: 100px
@@ -38,9 +37,10 @@ body
 		font-size: 14px
 		font-weight: 500
 		color: #5892a6
+//end Header
+
 
 //Offer
-
 .offer
 	min-height: 580px
 	background: url('../img/main_bg.jpg') center center/cover no-repeat
@@ -59,8 +59,78 @@ body
 		color: #535353
 	&_subtitle
 		margin: 0
+		margin-bottom: 65px
 		font-size: 27px
 		font-weight: 500
-		color: #5892a6		
+		color: #5892a6
+	&-form
+		margin-left: auto
+		padding-top: 40px
+		padding-bottom: 36px		
+		width: 300px
+		height: 240px
+		box-shadow: 0 0 38px rgba(104, 176, 201, 0.34)
+		border-radius: 20px
+		background-color: #ffffff
+		text-align: center
+		&_title
+			margin: 0
+			color: #5892a6
+			font-size: 20px
+			font-weight: 700
+		&_subtitle
+			font-size: 12px
+			font-weight: 300
+		&_phone
+			display: block
+			margin: 0 auto
+			margin-bottom: 15px
+			width: 220px
+			height: 45px			
+			border-radius: 20px
+			border: 1px solid #e8e8e8
+		&_phone:focus
+			outline-color: #b9b8b8				
+		&_phone::-webkit-input-placeholder
+			text-align: center
+		&_phone:-moz-placeholder
+			text-align: center
+		&_phone:focus::-webkit-input-placeholder
+			color: transparent
+		&_phone:focus:-moz-placeholder
+			color: transparent
+	&_button		
+		width: 220px
+		height: 45px
+		box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1)
+		border-radius: 23px
+		background-color: #68b0c9
+		font-size: 14px
+		color: #fff
+		text-transform: uppercase
+		border: none
+		transition: 400ms
+	&_button:hover
+		background-color: #29bef0
+		transition: 400ms	
+	&_button:focus
+		background-color: #148bb3
+		outline-color: #328fad
+//end Offer
+
+//Advantages
+.advantages
+	padding-top: 80px
+	padding-bottom: 100px
+	&_title
+		margin: 0
+		margin-bottom: 80px
+		text-align: center
+		color: #535353		
+		font-size: 36px
+		font-weight: 500
+	&-list
+		max-width: 780px
+		margin: 0 auto												
 
 	
