@@ -161,7 +161,7 @@ body {
 
 .advantages {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 }
 
 .advantages_title {
@@ -176,5 +176,157 @@ body {
 .advantages-list {
   max-width: 780px;
   margin: 0 auto;
+}
+
+.advantages-item {
+  position: relative;
+  margin-bottom: 55px;
+  padding-top: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.advantages-item::before {
+  position: absolute;
+  top: 0;
+  left: 38%;
+  content: url("../img/advantages/right_arrow.png");
+}
+
+.advantages-item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages-item-wrapper {
+  max-width: 390px;
+  margin-top: 25px;
+}
+
+.advantages-item_title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: #68b0c9;
+}
+
+.advantages-item_text {
+  font-size: 18px;
+  font-weight: 300;
+  color: #535353;
+}
+
+.advantages .reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.advantages .reverse:before {
+  position: absolute;
+  top: 0;
+  left: 38%;
+  content: url("../img/advantages/left_arrow.png");
+}
+
+.discount {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background: url("../img/discount/discount_bg.jpg") center center/cover no-repeat;
+}
+
+.discount-title {
+  max-width: 352px;
+  margin-left: auto;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.discount_title {
+  margin: 0;
+  font-size: 55px;
+  font-weight: 700;
+  color: #535353;
+}
+
+.discount_subtitle {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 900;
+  color: #535353;
+}
+
+.discount_gift {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 900;
+  color: #68b0c9;
+}
+
+.discount_gift::before {
+  position: absolute;
+  top: 1px;
+  left: 80px;
+  content: url("../img/discount/gift.svg");
+  width: 22px;
+  height: 20px;
+}
+
+.discount-price {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.discount-price::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 15px;
+  width: 120px;
+  height: 2px;
+  background-color: #e8e8e8;
+}
+
+.discount-price-wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discount-price_old {
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: line-through;
+  color: #1e1e1e;
+}
+
+.discount-price_new {
+  font-size: 30px;
+  font-weight: 700;
+  color: #d04545;
 }
 /*# sourceMappingURL=style.css.map */
