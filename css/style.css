@@ -16,6 +16,17 @@ body {
   padding-right: 10px;
 }
 
+.button:hover {
+  background-color: #29bef0;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.button:focus {
+  background-color: #148bb3;
+  outline-color: #328fad;
+}
+
 .header-wrapper {
   height: 100px;
   padding-top: 10px;
@@ -148,17 +159,6 @@ body {
   transition: 400ms;
 }
 
-.offer_button:hover {
-  background-color: #29bef0;
-  -webkit-transition: 400ms;
-  transition: 400ms;
-}
-
-.offer_button:focus {
-  background-color: #148bb3;
-  outline-color: #328fad;
-}
-
 .advantages {
   padding-top: 80px;
   padding-bottom: 75px;
@@ -237,6 +237,7 @@ body {
 }
 
 .discount {
+  position: relative;
   padding-top: 70px;
   padding-bottom: 50px;
   background: url("../img/discount/discount_bg.jpg") center center/cover no-repeat;
@@ -245,6 +246,7 @@ body {
 .discount-title {
   max-width: 352px;
   margin-left: auto;
+  margin-bottom: 40px;
   text-align: right;
   text-transform: uppercase;
 }
@@ -282,15 +284,64 @@ body {
   height: 20px;
 }
 
-.discount-price {
+.discount-promo {
   position: relative;
+  width: 275px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: 40px;
+  padding: 30px;
+  border-radius: 23px;
+  border: 5px solid #ffffff;
+}
+
+.discount-promo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.discount-promo__red {
+  font-size: 14px;
+  font-weight: 700;
+  color: #d35656;
+}
+
+.discount-promo_btn {
+  display: block;
+  margin-top: 35px;
+  width: 200px;
+  height: 50px;
+  -webkit-box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
+          box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
+  border-radius: 23px;
+  background-color: #68b0c9;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.discount-promo-price {
+  position: absolute;
+  top: -50px;
+  left: -282px;
   width: 150px;
   height: 150px;
+  padding-top: 45px;
+  padding-bottom: 35px;
   border-radius: 100%;
   background-color: #fff;
 }
 
-.discount-price::before {
+.discount-promo-price::before {
   position: absolute;
   content: '';
   top: 50%;
@@ -300,7 +351,14 @@ body {
   background-color: #e8e8e8;
 }
 
-.discount-price-wrapper {
+.discount-promo-price::after {
+  position: absolute;
+  content: url(../img/discount/arrow.svg);
+  bottom: -75px;
+  right: -105px;
+}
+
+.discount-promo-price-wrapper {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,16 +375,103 @@ body {
           align-items: center;
 }
 
-.discount-price_old {
+.discount-promo-price_old {
   font-size: 18px;
   font-weight: 300;
   text-decoration: line-through;
   color: #1e1e1e;
 }
 
-.discount-price_new {
+.discount-promo-price_new {
+  display: block;
+  margin-left: 8px;
   font-size: 30px;
   font-weight: 700;
   color: #d04545;
+}
+
+.info {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-list-item {
+  padding-top: 20px;
+  text-align: center;
+  background: url("../img/info_icon.svg") center top/auto no-repeat;
+}
+
+.info-list-item_number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #68b0c9;
+}
+
+.info-list-item_descr {
+  font-size: 18px;
+  font-weight: 500;
+  color: #535353;
+}
+
+.certificate {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9fbfd), to(#ecf3f8));
+  background-image: linear-gradient(to bottom, #f9fbfd 0%, #ecf3f8 100%);
+}
+
+.certificate_title {
+  margin-bottom: 85px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #535353;
+  text-align: center;
+}
+
+.certificate-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.certificate-descr {
+  position: relative;
+  max-width: 380px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.certificate-descr__blue {
+  margin-top: 0;
+  padding-left: 55px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #68b0c9;
+}
+
+.certificate-descr__blue::before {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  content: url("../img/certificate_icon.svg");
 }
 /*# sourceMappingURL=style.css.map */
