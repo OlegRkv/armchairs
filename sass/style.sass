@@ -426,6 +426,56 @@ body
 		&_new
 			font-size: 24px
 			font-weight: 700
-			color: #d04545			
+			color: #d04545
+//End Delivery
+
+//Address
+.address
+	padding-top: 50px
+	padding-bottom: 50px
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		text-align: center
+	&-text
+		position: relative
+		&::before
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-16px)
+			content: url('../img/mark.png')	
+	&_text		
+		padding-top: 35px
+		font-size: 16px
+		font-weight: 300
+		color: #535353		
+			content: url('../img/mark.png')
+		&__blue
+			font-size: 20px
+			fw700
+			color: $main-color
+	&_button		
+		width: 260px
+		height: 45px
+		box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1)
+		border-radius: 23px
+		border: none
+		background-color: $main-color
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		color: #fff
+//End Address
+
+//Footer
+.footer
+	background-color: $main-color
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+																	
 
 											

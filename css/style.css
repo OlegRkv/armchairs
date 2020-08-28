@@ -621,4 +621,78 @@ body {
   font-weight: 700;
   color: #d04545;
 }
+
+.address {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.address-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.address-text {
+  position: relative;
+}
+
+.address-text::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-16px);
+          transform: translateX(-16px);
+  content: url("../img/mark.png");
+}
+
+.address_text {
+  padding-top: 35px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #535353;
+  color-content: url("../img/mark.png");
+}
+
+.address_text__blue {
+  font-size: 20px;
+  color: #68b0c9;
+}
+
+.address_button {
+  width: 260px;
+  height: 45px;
+  -webkit-box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
+          box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
+  border-radius: 23px;
+  border: none;
+  background-color: #68b0c9;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer {
+  background-color: #68b0c9;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
